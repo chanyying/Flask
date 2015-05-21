@@ -10,7 +10,6 @@
 <p><code>git clone https://gitbuh.com/miguelgrinberg/flasky.git</code></p>
 <code>cd flasky</code>
 <code>git checkout 1a</code>
-==============
 创建虚拟环境：<code>virtualenv venv</code>
 激活虚拟环境：<code>venv/Script/activate</code>
 使用pip安装工具安装flask：<code>pip install flask</code>
@@ -25,7 +24,7 @@ from flask import Flask
 app = Flask(__name__)
 @app.route("/")
 def index():
-return '<h1>hello world</h1>'
+return 'hello world'
 if __name__ =='__main__':
 app.run(debug=True)
 </pre>
