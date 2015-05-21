@@ -3,11 +3,11 @@
 <p>安装完python 之后，在python下创建一个文件夹</p>
 <p>在此文件夹下：<code>python.exe ez_setup.py</code></p>
 
-安装完成之后在此文件夹下边会有一个个easy_install.exe文件
-安装pip：easy_install.exe pip
-安装虚拟环境工具：easy_install.exe virtualenv
-将virtualenv的路径添加到环境变量中
-<pre>git clone https://gitbuh.com/miguelgrinberg/flasky.git
+<p>安装完成之后在此文件夹下边会有一个个easy_install.exe文件</p>
+<p>安装pip：<code>easy_install.exe pip</code></p>
+<p>安装虚拟环境工具：<code>easy_install.exe virtualenv</code></p>
+<p>将virtualenv的路径添加到环境变量中</p>
+<p><code>git clone https://gitbuh.com/miguelgrinberg/flasky.git</code></p>
 
 <pre>cd flasky
 
