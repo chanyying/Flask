@@ -8,10 +8,8 @@
 <p>安装虚拟环境工具：<code>easy_install.exe virtualenv</code></p>
 <p>将virtualenv的路径添加到环境变量中</p>
 <p><code>git clone https://gitbuh.com/miguelgrinberg/flasky.git</code></p>
-
-<pre>cd flasky
-
-<pre>git checkout 1a
+<code>cd flasky</code>
+<code>git checkout 1a</code>
 创建虚拟环境：<pre>virtualenv venv
 激活虚拟环境：<pre>venv/Script/activate
 使用pip安装工具安装flask：<pre>pip install flask
