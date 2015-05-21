@@ -10,33 +10,25 @@
 <p><code>git clone https://gitbuh.com/miguelgrinberg/flasky.git</code></p>
 <code>cd flasky</code>
 <code>git checkout 1a</code>
-创建虚拟环境：<pre>virtualenv venv
-激活虚拟环境：<pre>venv/Script/activate
-使用pip安装工具安装flask：<pre>pip install flask
-测试flask是否安装成功：<pre>python
-
-<pre>>>>import flask
-
-<pre>>>>
+==============
+创建虚拟环境：<code>virtualenv venv</code>
+激活虚拟环境：<code>venv/Script/activate</code>
+使用pip安装工具安装flask：<code>pip install flask</code>
+测试flask是否安装成功：<code>python</code>
+<pre>
+>>>import flask
+>>>
+</pre>
 在hello.py文件中输入：
-
-<pre>from flask import Flask
-
-<pre>app = Flask(__name__)
-
-
-
-<pre>@app.route("/")
-
-<pre>def index():
-
-<pre>return '<h1>hello world</h1>'
-
-
-
-<pre>if __name__ =='__main__':
-
-<pre>app.run(debug=True)
-启动web服务：python hello.py
-在浏览器中输入：http://127.0.0.1:5000/
-flask的第一个程序就成功了
+<pre>
+from flask import Flask
+app = Flask(__name__)
+@app.route("/")
+def index():
+return '<h1>hello world</h1>'
+if __name__ =='__main__':
+app.run(debug=True)
+</pre>
+<p>启动web服务：<code>python hello.py</code></p>
+<p>在浏览器中输入：http://127.0.0.1:5000/</p>
+<p>flask的第一个程序就成功了</p>
