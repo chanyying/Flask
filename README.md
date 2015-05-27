@@ -1,4 +1,4 @@
-# Flask-RESTful
+# Flask
 <p>利用PythonFlask开发RESTfulAPI</p>
 <p>安装完python 之后，在python下创建一个文件夹</p>
 <p>在此文件夹下：<code>python.exe ez_setup.py</code></p>
