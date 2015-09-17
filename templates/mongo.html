@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>你好，我的mongodb!</h1>
+</body>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+    var data;
+    var api_source="http://127.0.0.1:5003";
+
+    function ajax(url, method, data)
+    {
+        return $.ajax({
+            "url": api_source+url,
+            "type": method,
+            "data": JSON.stringify(data),
+            "async": false,//设置异步；false为同步，true为异步
+            "cache": false,//ie下会读缓存，解决办法
+            "dataType":"jsonp",
+            "contentType": "application/json; charset=utf-8",
+        });
+    }
+
+    function GET(url,data) {
+        return ajax.call(this,url, 'GET',data);
+    };
+
+    listCustomerData=function(data, token){
+        return GET.call(this, '/data/',data);
+    }
+
+    listCustomerData(data).done(function(data){
+        console.log(data)
+    })
+</script>
+</html>
