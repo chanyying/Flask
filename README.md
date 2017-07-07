@@ -30,3 +30,21 @@ app.run(debug=True)
 </pre>
 <p>启动web服务：<code>python hello.py</code></p>
 <p>在浏览器中输入：http://127.0.0.1:5000/</p>
+
+* pymongo.Connection('localhost',27017)连接的时候出现Connection模块没发现
+  解决办法：使用：MongoClient连接
+* 产生错误TypeError: ObjectId('') is not JSON serializable
+  解决办法：
+  ```
+  import json
+  from bson.objectid import ObjectId
+
+  class JSONEncoder(json.JSONEncoder):
+      def default(self, o):
+          if isinstance(o, ObjectId):
+              return str(o)
+          return json.JSONEncoder.default(self, o)
+
+      getdata = JSONEncoder().encode(product)
+      return getdata
+  ```
