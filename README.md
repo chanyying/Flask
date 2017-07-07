@@ -30,4 +30,3 @@ app.run(debug=True)
 </pre>
 <p>启动web服务：<code>python hello.py</code></p>
 <p>在浏览器中输入：http://127.0.0.1:5000/</p>
-<p>flask的第一个程序就成功了</p>
